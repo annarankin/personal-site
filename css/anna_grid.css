@@ -25,12 +25,6 @@
   flex-wrap:wrap;
 }
 
-/* Special class for a container you wish to stack items vertically inside */
-.column {
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /* Full width and special no-width classes! */
 .grid-full {
   width: 100%;
@@ -58,9 +52,10 @@
   width: 33.3%;
 }
 
-/* Targeting the first 1/3 grid in each row to fix width problem */
+/* Targeting a single 1/3 grid in each row to fix width problem */
 .grid-1-3:nth-of-type(3n) {
   width: 33.4%;
+  /*border: 1px solid;*/
 }
 
 .grid-2-3 {

@@ -19,6 +19,8 @@
   <!-- Sweet fonts yo -->
   <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
   <!-- Custom CSS styles -->
   <link rel="stylesheet" href="css/anna_grid.css">
   <link rel="stylesheet" href="css/style.css">
@@ -35,18 +37,18 @@
       </ul>
     </nav>
 
-    <header class="grid-full row">
+    <header class="grid-full row inset">
         <div class="grid-full headline">
           <h1>Anna Rankin</h1>
           <h2>Web Developer, Instructor, Artist</h2>
           <p><em>...and karaoke champ</em></p>
         </div>
       <div class="grid-full row info">
-        <div class="grid-full grid-m-1-5 photo">
+   <!--      <div class="grid-full grid-m-1-5 photo">
           <img src="img/anna_photo.jpg" alt="Anna Rankin headshot">  
-        </div>
+        </div> -->
 
-        <div class="grid-full grid-m-4-5">
+        <div class="grid-full">
           <h2>About</h2>
           <p>I'm a full-stack web developer with experience building applications in Rails, Node &amp; Express,  lived in NYC for nearly a decade, work on Linux &amp; Mac systems, super huge nerd, etc</p>
          <p>Since I can remember, I've always been tinkering with code. Recently, I jumped in headfirst and began programming in earnest.</p>
@@ -58,7 +60,7 @@
     </header>
 
     <!-- List systems I've worked with, major accomplishments, and things I hope to achieve -->
-    <div class="grid-full skills row">
+    <div class="grid-full skills row light-blue inset">
       <div class="grid-full headline">
         
         <h1>Technical Skills</h1>
@@ -74,6 +76,7 @@
           <!-- SQLite3 & PostgreSQL -->
           <!-- MongoDB -->
         <!-- Node/Express -->
+        <!-- Sinatra -->
         <!-- Ruby on Rails -->
           <!-- OAuth? -->
           <!-- ActiveRecord -->
@@ -91,14 +94,22 @@
       </div>
     </div>
 
-    <div class="project-list row green">
+    <div class="project-list row green inset">
       <div class="grid-full headline">
         <h1>Featured Projects</h1>
         <h2>What I've been up to lately</h2>
       </div>
       <!-- Choose 3 projects to summarize/highlight -->
+      <!-- FIX THIS. Should be scrollable or clickable or some shit -->
       <!-- hexagons? -->
       <!-- attendance thing -->
+      <div class="project grid-full grid-m-1-3">
+        <a href="https://thanks-for-being.herokuapp.com/">
+          <img src="img/proj_golden_girls.png" alt="Brain Jam game screenshot">
+        </a>
+        <h3>Thanks For Being A Friend</h3>
+        <p>This game was created during Brain Jam 2015, a 48-hour game jam focusing on mental health put on by the Brooklyn Gamery. For this project, I taught myself the basics of Phaser.io, a 2D JavaScript/HTML5 game framework. The game itself focuses on cheering up a futuristic Golden Girl character by "attacking" them with cheerful images.</p>
+      </div>
       <div class="project grid-full grid-m-1-3">
         <img src="img/proj_bomb.png" alt="Bomb Defuser screenshot">
         <h3>Bomb Defuser</h3>
@@ -109,14 +120,6 @@
         <h3>Attendance Tracker</h3>
         <p>While working as an instructor, I got tired of using spreadsheets to track my students' attendance. As a side project, I created a Rails/Backbone web application with Github login to help me track and import student information, class information, and attendance more easily.</p>
       </div>
-      <div class="project grid-full grid-m-1-3">
-        <img src="img/proj_bomb.png" alt="Bomb Defuser screenshot">
-        <h3>Bomb Defuser</h3>
-        <p>This simple bomb defusion simulation game was originally a prompt I developed to teach my students about DOM manipulation and event listeners. I created the graphics, HTML, and CSS - their mission was to write the JavaScript that would enable their user to disarm the bomb and save the world!</p>
-      </div>
-
-
-
 
       <!-- TODO: Create cohort tracker, link up -->
       <!-- While working as an instructor, I got tired of using spreadsheets to track my students' attendance. As a side project, I created -->

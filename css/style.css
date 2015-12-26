@@ -21,7 +21,8 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight:normal;
+  font-family: 'Nixie One', cursive;
+  /*font-weight:lighter;*/
   padding: 0.25em 0 0.5em
 }
 em {
@@ -35,11 +36,23 @@ a {
 }
 .headline {/* General classifer for section headers */
   text-align: center;
-  padding-bottom: 2em;
+  padding: 5em 4em;
 }
 /* General section padding */
 header>div, .about, .project-list, .project, .contact, footer {
   padding:1em 30px 
+}
+
+.green {
+  background-color: #aac973;
+}
+.light-blue {
+  padding:1em;
+  background-color: #d0d0ff;
+}
+.inset {
+  box-shadow: inset 0px -10px 18px -10px rgba(0,0,0,0.5), 
+              inset 0 10px 18px -10px rgba(0,0,0,0.5);
 }
 
 /* ---- Header styles ---- */
@@ -50,7 +63,6 @@ header {
   font-weight: normal;
 }
 header img {
-  border-radius: 50%;
   display: block;
   margin: 0 auto;
   max-width: 45%
@@ -111,7 +123,7 @@ nav ul li {
 }
 .circle-divider:after {
   content: "";
-  background: url('http://cdn.flaticon.com/png/256/7584.png');
+  background: url('../img/chev_dwn.png');
   background-color: salmon;
   background-size:contain;
   text-align:center;
@@ -171,7 +183,7 @@ nav ul li {
   }
   .circle-divider:after {
    content: "";
-   background: url('http://megaicons.net/static/img/icons_sizes/8/178/256/arrows-right-round-icon.png');
+   background: url('../img/chev_rt.png');
    background-color: salmon;
    background-size:contain;
    text-align:center;
