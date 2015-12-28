@@ -1,0 +1,61 @@
+body {
+  font-family: Anonymous Pro;
+}
+/* CSS for fixed header. To-do: backwards compatibility */
+header {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  z-index: 2;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+}
+header ul a {
+  text-decoration: none;
+  padding: 1em;
+  color: #a1617a;
+}
+header ul a:hover {
+  background-color: #333;
+  color: #ffc360;
+}
+header ul a:active {
+  background-color: #369;
+}
+/* Section styles */
+
+/* Slide styles*/
+
+div.section, div.slide {
+  color: #EEE;
+  text-align: center;
+}
+
+/*
+ Color reference:
+------------------
+purple: #a1617a
+dark gray: #2e2e2e
+yellow-orange: #ffc360
+red-brown: #cc7833
+light blue: #d0d0ff
+light green: #aac973
+*/
+
+
+.about {
+  background-color: #2e2e2e;
+}
+.skills {
+  background-color: #d0d0ff;
+}
+.projects {
+  background-color: #2e2e2e;
+}
+.contact {
+  background-color: #aac973;
+}
