@@ -22,7 +22,6 @@ img {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nixie One', cursive;
-  /*font-weight:lighter;*/
   padding: 0.25em 0 0.5em
 }
 em {
@@ -34,9 +33,13 @@ a {
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-.headline {/* General classifer for section headers */
+header .headline {/* General classifer for section headers */
   text-align: center;
   padding: 5em 4em;
+}
+.headline {/* General classifer for section headers */
+  text-align: center;
+  padding: 2em 4em;
 }
 /* General section padding */
 header>div, .about, .project-list, .project, .contact, footer {
@@ -117,7 +120,7 @@ nav ul li {
 }
 .circle-divider:before {
   content:"";
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #eee;
   position: absolute;
   width: 100%;
 }
@@ -133,6 +136,12 @@ nav ul li {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+/* Info Section */
+
+.info p {
+  margin: 1em;
 }
 
 /* ---- "About Me" section ----*/
@@ -154,11 +163,12 @@ nav ul li {
 
 #then {
   border-radius: 5px 50px 0px 0px;
-  border-bottom: none;
+  border: 0;
+  /*border-bottom: none;*/
 }
 #now {
   border-radius: 0px 0px 5px 50px;
-  border-left: 0;
+  border: 0;
 }
 
 
