@@ -66,6 +66,9 @@ div.section, div.slide {
   margin: 0 auto;
 }
 
+.fp-slidesNav ul li a span {
+  background-color: #EEE;
+}
 
 /*
  Color reference:
@@ -131,13 +134,30 @@ mid green: #66b810;
   background-color: #d0d0ff;
 }
 .projects {
-  background-color: #2e2e2e;
+  background-color: #663352;
 }
 
-.projects .container {
+.projects > .container {
   max-width: 800px;
   padding: 0 1.75em;
   margin: 0 auto;
+}
+.projects .slide .container {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+
+.projects .slide .container div {
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+.projects .slide .container .display {
+  width: 30%;
+  font-size: 0.75em;
+}
+.projects .slide .container .description {
+  width: 70%;
 }
 
 .projects .container img {
