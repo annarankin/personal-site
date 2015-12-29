@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anna Rankin</title>
   <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./css/jquery.fullPage.css">
@@ -12,21 +13,40 @@
   <script src="./js/main.js"></script>
 </head>
 <body>
-    
+
   <header>
     <ul id="menu">
       <li data-menuanchor="about"><a href="#about">About</a></li>
       <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
       <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
       <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-    </ul>
+    </ul> 
   </header>
 
   <div id="fullpage">
-    
+
+    <div class="section home" data-anchor="home">
+
+      <div class="headline">
+        <h1>Anna Rankin</h1>
+        <h2>Web Developer, Instructor, Artist</h2>
+        <p><em>(...and karaoke champ)</em></p>
+      </div>
+      <div class="directions">
+        <p>Scroll down</p>
+        <div class="down-arrow"></div>
+      </div>
+    </div>
 
     <div class="section about" data-anchor="about">
-      <h1>This is the about section</h1>
+      <div class="container">
+
+        <div class="headshot"></div>
+        <h2>About</h2>
+        <p>I'm a <strong>full-stack web developer</strong> with experience building applications in <strong>Rails</strong>, <strong>Node</strong> &amp; <strong>Express</strong>. I work on <strong>Linux</strong> &amp; <strong>Mac</strong> machines, am a super huge nerd for education &amp; games, and have lived in NYC for nearly a decade.</p>
+        <p>Ever since I can remember, I've been tinkering with code. Last year I jumped in headfirst and began programming in earnest. I'm currently teaching the basics of web development in <strong>Ruby</strong> and <strong>JavaScript</strong> to novice programmers and designing educational materials that keep folks excited about code.</p>
+
+      </div>
     </div>
     
     <div class="section skills" data-anchor="skills">
@@ -35,9 +55,28 @@
     </div>
     
     <div class="section projects" data-anchor="projects">
-      <div class="slide">Hi</div>
-      <div class="slide">Crystal</div>
-      <div class="slide">!</div>      
+      <div class="container">
+
+        <div class="slide">
+          <a href="https://thanks-for-being.herokuapp.com/">
+            <img src="img/proj_golden_girls.png" alt="Brain Jam game screenshot">
+            <h3>Thanks For Being A Friend</h3>
+          </a>
+          <p>This game was created during <a href="https://itch.io/jam/brainjam">Brain Jam 2015</a>, a 48-hour game jam focusing on mental health put on by the Brooklyn Gamery. For this project, I taught myself the basics of Phaser.io, a 2D JavaScript/HTML5 game framework. The game itself focuses on cheering up a futuristic Golden Girl character by "attacking" them with cheerful images.</p>
+        </div>
+        <div class="slide">
+          <a href="http://annarankin.github.io/bomb_defusion/">
+            <img src="img/proj_bomb.png" alt="Bomb Defuser screenshot">
+            <h3>Bomb Defuser</h3>
+          </a>
+          <p>This simple bomb defusion simulation game was originally <a href="https://github.com/annarankin/bomb_defusion">a prompt I developed</a> to teach my students about DOM manipulation and event listeners. I created the graphics, HTML, and CSS - their mission was to write the JavaScript that would enable their user to disarm the bomb and save the world!</p>
+        </div>
+        <div class="slide">
+          <img src="img/proj_attendance.png" alt="Attendance Tracker screenshot">
+          <h3>Attendance Tracker</h3>
+          <p>While working as an instructor, I got tired of using spreadsheets to track my students' attendance. As a side project, I created a Rails/Backbone web application with Github login to help me track and import student information, class information, and attendance more easily.</p>
+        </div>
+      </div>
     </div>
     
     <div class="section contact" data-anchor="contact">
@@ -53,5 +92,5 @@
 <!-- Section 1: Aboot me -->
 <!-- Section 2: Technical Skills -->
 <!-- Section 3: Projects (featured & link to GH) -->
-  <!-- Scrolling section w/ featured projects. Possible to have a ribbon w/constant text -->
+<!-- Scrolling section w/ featured projects. Possible to have a ribbon w/constant text -->
 <!-- Section 4: Contact -->
