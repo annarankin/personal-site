@@ -1,0 +1,131 @@
+<!-- Okay, this is gonna be a full=page site. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anna Rankin</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="./css/jquery.fullPage.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-2.1.4.min.js"></script>
+  <script src="./js/jquery.fullPage.min.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/d3.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <ul id="menu">
+      <li data-menuanchor="about"><a href="#about">About</a></li>
+      <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+      <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+      <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+    </ul> 
+  </header>
+
+  <div id="fullpage">
+
+    <div class="section home" data-anchor="home">
+
+      <div class="headline">
+        <h1>Anna Rankin</h1>
+        <h2>Web Developer, Instructor, Artist</h2>
+        <p><em>(...and karaoke champ)</em></p>
+      </div>
+      <div class="directions">
+        <p>Scroll down</p>
+        <div class="down-arrow"></div>
+      </div>
+    </div>
+
+    <div class="section about" data-anchor="about">
+      <div class="container">
+
+        <div class="headshot"></div>
+        <h2>About</h2>
+        <p>I'm a <strong>full-stack web developer</strong> with experience building applications in <strong>Rails</strong>, <strong>Node</strong> &amp; <strong>Express</strong>. I'm currently teaching the basics of web development in <strong>Ruby</strong> and <strong>JavaScript</strong> to novice programmers and designing educational materials that keep folks excited about code.</p>
+        <p>Ever since I can remember, I've been tinkering with code. Last year I jumped in headfirst and began programming in earnest. I work on <strong>Linux</strong> &amp; <strong>Mac</strong> machines, am a super huge nerd for education &amp; games, and have lived in NYC for nearly a decade.</p>
+
+      </div>
+    </div>
+    
+    <div class="section skills" data-anchor="skills">
+      <h1>This is the skills section</h1>
+      <div id="tree-vis"></div>
+      
+    </div>
+    
+    <div class="section projects" data-anchor="projects">
+      <div class="container">
+        <div class="slide">
+          <a href="http://annarankin.github.io/json-navigator/" target="_blank">
+            <img src="img/proj_json_nav.png" alt="JSON Navigator screenshot">
+            <h3>JSON Navigator</h3>
+          </a>
+          <p>As a side project, I created a tool to help my students learn to navigate nested data structures. The application allows the user see a nicely formatted version of their JSON data, to hover over the keys and values, and see how to access that data in either Ruby or JavaScript.</p>
+        </div>
+
+        <div class="slide">
+          <div class="container">
+            <div class="display">
+              <a href="https://thanks-for-being.herokuapp.com/" target="_blank">
+                <img src="img/proj_golden_girls.png" alt="Brain Jam game screenshot">
+                <h3>Thanks For Being A Friend</h3>
+              </a>
+            </div>
+            <div class="description">
+              <p>This game was created during <a href="https://itch.io/jam/brainjam" target="_blank">Brain Jam 2015</a>, a 48-hour game jam focusing on mental health put on by the Brooklyn Gamery. For this project, I taught myself the basics of Phaser.io, a 2D JavaScript/HTML5 game framework. The game itself focuses on cheering up a futuristic Golden Girl character by "attacking" them with cheerful images.</p>
+            </div>
+            <div class="description">
+              <p>This simple bomb defusion simulation game was originally <a href="https://github.com/annarankin/bomb_defusion" target="_blank">a prompt I developed</a> to teach my students about DOM manipulation and event listeners. I created the graphics, HTML, and CSS - their mission was to write the JavaScript that would enable their user to disarm the bomb and save the world!</p>
+              
+            </div>
+            <div class="display">
+              <a href="http://annarankin.github.io/bomb_defusion/" target="_blank">
+                <img src="img/proj_bomb.png" alt="Bomb Defuser screenshot">
+                <h3>Bomb Defuser</h3>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="slide">
+          <h2>Put some Ruby project here!</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section contact" data-anchor="contact">
+      <h1>Get in touch!</h1>
+
+      <i class="fa fa-envelope-o"></i>
+      <a href="#">Email Me</a>
+      <p>Drop me a line</p>
+
+      <i class="fa fa-github-alt"></i>
+      <a href="http://github.com/annarankin" target="_blank">Github</a>
+      <p>Get up close and personal with my code</p>
+
+      <i class="fa fa-linkedin-square"></i>
+      <a href="https://www.linkedin.com/in/annarankin" target="_blank">LinkedIn</a>
+      <p>Professional network &amp; employment history</p>
+
+      <i class="fa fa-paint-brush"></i>
+      <a href="http://www.annarankin.com" target="_blank">Artwork</a>
+      <p>Personal &amp; commissioned illustration work</p>
+
+    </div>
+  </div>
+
+  <h1>Hello</h1>
+</body>
+</html>
+<!-- nav bar thing here I assume -->
+<!-- Section 1: Aboot me -->
+<!-- Section 2: Technical Skills -->
+<!-- Section 3: Projects (featured & link to GH) -->
+<!-- Scrolling section w/ featured projects. Possible to have a ribbon w/constant text -->
+<!-- Section 4: Contact -->
