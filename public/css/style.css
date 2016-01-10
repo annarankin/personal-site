@@ -20,7 +20,7 @@ header ul a {
   color: #d0d0ff;
   padding: 1em 0.25em;
 }
-header ul a:hover {
+header ul a:hover, header ul li.active a {
   background-color: #333;
   color: #ffc360;
 }
@@ -56,10 +56,24 @@ div.section, div.slide {
   box-shadow: 
   inset 0px -10px 18px -8px rgba(0,0,0,0.75),
   inset 0px 10px 18px -8px rgba(0,0,0,0.75);
-
 }
+
+
+@-webkit-keyframes bounce {
+  0%, 100% { bottom: 1.5em;}
+  50% { bottom: 2em;}
+}
+@-moz-keyframes bounce {
+  0%, 100% { bottom: 1.5em;}
+  50% { bottom: 2em;}
+}
+@keyframes bounce {
+  0%, 100% { bottom: 1.5em;}
+  50% { bottom: 2em;}
+}
+
 .down-arrow {
-  border-top: 35px solid #777;
+  border-top: 35px solid #2e2e2e;
   border-right: 40px solid transparent;
   border-left: 40px solid transparent;
   width: 0px;
@@ -79,13 +93,14 @@ yellow-orange: #ffc360
 red-brown: #cc7833
 light blue: #d0d0ff
 light green: #aac973
-mid green: #66b810;
+mid green: #339825;
 */
 
 /* Section-specific styling */
 
 .home {
-  background-color: #2e2e2e;
+  background-image: url('/img/straws.png');
+  background-size: cover;
 }
 
 .home h1 {
@@ -96,11 +111,23 @@ mid green: #66b810;
   font-size: 1.5em;
   color: #d0d0ff;
 }
+.home .headline {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5em 1em;
+  background-color: #2e2e2e;
+}
 .home .headline p {
   color: #ffc360;
 }
 .home .directions {
- margin-top: 7em;
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  bottom: 2em;
+  -webkit-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
 
 .home .content p, .about .content h2 {
@@ -120,19 +147,56 @@ mid green: #66b810;
   margin: 0 auto;
 }
 .about, .contact {
-  background: #66b810;
+  background: #339830;
 }
 .about strong {
   color: #ffc360;
   font-weight: bold;
 }
 .about .container p {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .skills {
+  background-image: url('/img/straws.png');
+  background-size: cover;
+}
+.skills .container {
   background-color: #d0d0ff;
 }
+.skills p, .skills h2, .skills li {
+  color: #2e2e2e;
+}
+.skills h1, .skills h3 {
+  color: #a1617a;
+}
+.skills h3 {
+  padding-bottom: 0.125em;
+  border-bottom: 1px solid;
+}
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.skills .container {
+  padding: 3em 1em;
+}
+.skills .summary ul {
+  flex-direction: column;
+}
+.skills .summary {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.skills .summary div {
+  text-align: center;
+  width: 100%;
+}
+
+
 .projects {
   background-color: #663352;
 }
@@ -145,24 +209,28 @@ mid green: #66b810;
 .projects .slide .container {
   display: flex;
   flex-wrap:wrap;
+  flex-direction: column
 }
-
 
 .projects .slide .container div {
   box-sizing: border-box;
-  padding: 0.5em;
+  padding: 0.125em 0.125em;
 }
 .projects .slide .container .display {
-  width: 30%;
   font-size: 0.75em;
 }
-.projects .slide .container .description {
-  width: 70%;
+.projects .slide .container :nth-child(3) {
+  border-top: 1px solid;
+}
+
+.projects .slide .container .description p {
+  font-size: 0.7em;
+  margin: 0.125em;
 }
 
 .projects .container img {
   max-width: 90%;
-  max-height: 250px;
+  max-height: 125px;
 }
 .contact a {
   color: #2e2e2e;
@@ -185,7 +253,7 @@ mid green: #66b810;
 }
 
 @media(min-width: 535px) {
- div.section {
+   div.section {
     padding: 0 1.5em;
   }
 
@@ -210,7 +278,7 @@ mid green: #66b810;
   .home h2 {
     font-size:2em
   }
-  .about .container {
+  .about .container, .skills .container {
     max-width: 800px;
     margin: 0 auto;
   }
@@ -221,6 +289,50 @@ mid green: #66b810;
   .projects .container img {
    max-width: 100%;
    max-height: 300px;
+  }
+  .projects > .container {
+    max-width: 800px;
+    padding: 0 1.75em;
+    margin: 0 auto;
+  }
+  .projects .slide .container {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row
+  }
+  .projects .slide .container div {
+    box-sizing: border-box;
+    padding: 0.5em;
+  }
+  .projects .slide .container .display {
+    width: 30%;
+    font-size: 0.75em;
+  }
+  .projects .slide .container .description {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects .container img {
+    max-width: 90%;
+    max-height: 250px;
+  }
+  .projects .slide .container :nth-child(3) {
+    border-top: 0;
+  }
+  .projects .slide .container .description p {
+    display: inline;
+    font-size: 1em;
+  }
+  .skills .summary {
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .skills .summary div {
+    max-width: 33%;
+    flex-wrap: wrap;
   }
 
 }
