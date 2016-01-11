@@ -132,8 +132,8 @@ div.section, div.slide {
 }
 
 .about .headshot {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   background-image: url('../img/anna_photo.jpg');
   background-size:cover;
@@ -149,6 +149,45 @@ div.section, div.slide {
 }
 .about .container p {
   font-size: 0.9em;
+}
+
+
+
+div.section.projects {
+  background-color: #663352;
+  padding: 0em 1.75em;
+}
+
+.projects > .container {
+  max-width: 800px;
+  padding: 0 1.25em;
+  margin: 0 auto;
+}
+.projects .slide .container {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column
+}
+
+.projects .slide .container div {
+  box-sizing: border-box;
+  padding: 0.125em;
+}
+.projects .slide .container .display {
+  font-size: 0.75em;
+}
+.projects .slide .container :nth-child(3) {
+  border-top: 1px solid;
+}
+
+.projects .slide .container .description p {
+  font-size: 0.7em;
+  margin: 0.125em;
+}
+
+.projects .container img {
+  max-width: 90%;
+  max-height: 100px;
 }
 
 .skills {
@@ -187,41 +226,7 @@ div.section, div.slide {
 }
 
 
-.projects {
-  background-color: #663352;
-}
 
-.projects > .container {
-  max-width: 800px;
-  padding: 0 1.75em;
-  margin: 0 auto;
-}
-.projects .slide .container {
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: column
-}
-
-.projects .slide .container div {
-  box-sizing: border-box;
-  padding: 0.125em 0.125em;
-}
-.projects .slide .container .display {
-  font-size: 0.75em;
-}
-.projects .slide .container :nth-child(3) {
-  border-top: 1px solid;
-}
-
-.projects .slide .container .description p {
-  font-size: 0.7em;
-  margin: 0.125em;
-}
-
-.projects .container img {
-  max-width: 90%;
-  max-height: 125px;
-}
 .contact a {
   color: #ffc360;
   text-decoration: none;
