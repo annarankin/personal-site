@@ -1,8 +1,1 @@
-$(function() {
-  $('#fullpage').fullpage({
-    anchors: ['home', 'about', 'projects', 'skills', 'contact'],
-    menu: '#menu',
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom'
-  });
-});
+console.log("Hamburger menu - order up!"),$(function(){var o=$("ul#menu"),e=$(".toggle");e.on("click",function(e){$(e.currentTarget).toggleClass("x"),o.toggleClass("show")})}),$(function(){$("#fullpage").fullpage({anchors:["home","about","projects","skills","contact"],menu:"#menu",slidesNavigation:!0,slidesNavPosition:"bottom"})});

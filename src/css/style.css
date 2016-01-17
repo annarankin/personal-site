@@ -1,0 +1,99 @@
+/*
+ Color reference:
+------------------
+purple: #a1617a
+dark gray: #2e2e2e
+yellow-orange: #ffc360
+red-brown: #cc7833
+light blue: #d0d0ff
+light green: #aac973
+mid green: #339825;
+*/
+
+/* Mobile styles */
+body {
+  font-family: Raleway;
+  font-size: 18px;
+}
+
+/* ------ General styles ------ */
+
+a {
+  color: #ffc360;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.25em;
+}
+h1 {
+  font-size: 2em
+}
+h2 {
+  font-size: 1.5em;
+}
+
+div.section, div.slide {
+  text-align: center;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { bottom: 1.5em;}
+  50% { bottom: 2em;}
+}
+@keyframes bounce {
+  0%, 100% { bottom: 1.5em;}
+  50% { bottom: 2em;}
+}
+
+
+/* ------ Section-specific styling ------ */
+
+
+.down-arrow {
+  border-top: 35px solid #2e2e2e;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  width: 0px;
+  margin: 0 auto;
+}
+.directions {
+  position: fixed;
+  left: 40%;
+  width: 20%;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+.about .headshot {
+  width: 125px;
+  height: 125px;
+  background-image: url('../img/anna_photo.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+div.section.projects .pure-g {
+  width: 75%;
+  margin: 0 auto;
+}
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #000;
+  border-width: 35px 0 35px 25px;
+}
+.fp-controlArrow.fp-prev {
+  border-color: transparent #000 transparent transparent;
+  border-width: 35px 25px 35px 0;
+}
+
+/* Why did I do this? */
+.fp-slidesNav ul li a span {
+  background-color: #EEE;
+}
+.projects {
+  background: #EEE;
+}
+.projects .container {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
