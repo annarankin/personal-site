@@ -34,9 +34,10 @@ ul#menu {
   display: block;
   z-index: -1;
   transition: top 0.5s;
+  font-size: 0.8em
 }
 ul#menu.show {
-  top:2em;
+  top:2.5em;
 }
 ul#menu a:hover, ul#menu li.active a {
   text-decoration: none;
@@ -92,5 +93,6 @@ a.toggle {
     z-index: 2;
     top: 0em;
     left: 9em;
+    font-size: 1em;
   }
 }
