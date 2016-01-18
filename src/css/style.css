@@ -19,7 +19,12 @@ body {
 /* ------ General styles ------ */
 
 a {
-  color: #ffc360;
+  color: orangered;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,19 +68,15 @@ div.section, div.slide {
   -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
 }
+.container {
+  background: #FFF;
+  padding: 1em 0;
+  width: 100%;
+}
 
-.about .headshot {
-  width: 125px;
-  height: 125px;
-  background-image: url('../img/anna_photo.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-div.section.projects .pure-g {
-  width: 75%;
-  margin: 0 auto;
-}
+
+
+/* Setting custom display for arrows and dots on slides pages */
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #000;
   border-width: 35px 0 35px 25px;
@@ -85,15 +86,58 @@ div.section.projects .pure-g {
   border-width: 35px 25px 35px 0;
 }
 
-/* Why did I do this? */
-.fp-slidesNav ul li a span {
-  background-color: #EEE;
-}
+
 .projects {
   background: #EEE;
 }
-.projects .container {
+.about .headshot {
+  width: 125px;
+  height: 125px;
+  background-image: url('../img/anna_photo.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1em solid #B0E3EF;
+}
+.about {
+  background-color: orange;
+}
+.about .description {
+  width: 95%;
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 1em;
+}
+.projects .pure-g {
+  width: 75%;
+  margin: 0 auto;
+}
+.projects .card-container {
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.skills ul {
+  list-style:none;
+  padding-left:0
+}
+.section {
+  padding-top: 1em;
+}
+.contact, .about {
+  background-image: url('/img/bg-lines.jpg');
+}
+.projects {
+  background-image: url('/img/bg-chevron-fabric.jpg');
+  background-size: cover;
+}
+.skills {
+  background-image: url('/img/bg-chevron.jpg');
+  background-size: cover;
+}
+.home {
+  background-image: url('/img/bg-houndstooth.jpg');
 }

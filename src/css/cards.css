@@ -6,24 +6,23 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  display:inline-flex;
+  /*display:inline-flex;*/
   margin: 0.5em 0.25em;
 }
 .card.column {
   flex-direction: column;
-}
-.card a {
-  color: #777;
-  text-decoration: none;
-}
-.card a:hover {
-  color: #369;
 }
 .card .display {
   background: #FFF;
   box-sizing:border-box;
   padding: 0.25em;
   font-size: 0.75em;
+}
+.card .display img {
+  max-height: 400px;
+}
+.card-container .card .display img {
+  max-height: 110px;
 }
 .card .display h3 {
   padding: 1em 1em 0;

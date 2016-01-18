@@ -6,24 +6,23 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  display:inline-flex;
+  /*display:inline-flex;*/
   margin: 0.5em 0.25em;
 }
 .card.column {
   flex-direction: column;
-}
-.card a {
-  color: #777;
-  text-decoration: none;
-}
-.card a:hover {
-  color: #369;
 }
 .card .display {
   background: #FFF;
   box-sizing:border-box;
   padding: 0.25em;
   font-size: 0.75em;
+}
+.card .display img {
+  max-height: 400px;
+}
+.card-container .card .display img {
+  max-height: 110px;
 }
 .card .display h3 {
   padding: 1em 1em 0;
@@ -55,9 +54,10 @@ header {
   text-transform: uppercase;
   color: #FFF;
 }
-.menu-control a:hover, .menu-control a.active {
+.menu-control a:hover {
   color: #FFF;
   background: #555;
+  text-decoration: none;
 }
 .menu-control a:focus {
   background: #000;
@@ -69,11 +69,18 @@ ul#menu {
   top: 0em;
   display: block;
   z-index: -1;
+  transition: top 0.5s;
 }
 ul#menu.show {
-  visibility:visible;
   top:2em;
 }
+ul#menu a:hover, ul#menu li.active a {
+  text-decoration: none;
+  color: #000;
+  background-color: #EEE;
+}
+
+
 
 a.toggle {
     position: relative;
@@ -117,6 +124,7 @@ a.toggle {
 
   ul#menu, ul#menu.show {
     display:block;
+    transition:none;
     z-index: 2;
     top: 0em;
     left: 9em;
@@ -355,7 +363,12 @@ body {
 /* ------ General styles ------ */
 
 a {
-  color: #ffc360;
+  color: orangered;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -399,19 +412,15 @@ div.section, div.slide {
   -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
 }
+.container {
+  background: #FFF;
+  padding: 1em 0;
+  width: 100%;
+}
 
-.about .headshot {
-  width: 125px;
-  height: 125px;
-  background-image: url('../img/anna_photo.jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
-div.section.projects .pure-g {
-  width: 75%;
-  margin: 0 auto;
-}
+
+
+/* Setting custom display for arrows and dots on slides pages */
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #000;
   border-width: 35px 0 35px 25px;
@@ -421,15 +430,58 @@ div.section.projects .pure-g {
   border-width: 35px 25px 35px 0;
 }
 
-/* Why did I do this? */
-.fp-slidesNav ul li a span {
-  background-color: #EEE;
-}
+
 .projects {
   background: #EEE;
 }
-.projects .container {
+.about .headshot {
+  width: 125px;
+  height: 125px;
+  background-image: url('../img/anna_photo.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1em solid #B0E3EF;
+}
+.about {
+  background-color: orange;
+}
+.about .description {
+  width: 95%;
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 1em;
+}
+.projects .pure-g {
+  width: 75%;
+  margin: 0 auto;
+}
+.projects .card-container {
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
+  width: 100%;
+}
+
+.skills ul {
+  list-style:none;
+  padding-left:0
+}
+.section {
+  padding-top: 1em;
+}
+.contact, .about {
+  background-image: url('/img/bg-lines.jpg');
+}
+.projects {
+  background-image: url('/img/bg-chevron-fabric.jpg');
+  background-size: cover;
+}
+.skills {
+  background-image: url('/img/bg-chevron.jpg');
+  background-size: cover;
+}
+.home {
+  background-image: url('/img/bg-houndstooth.jpg');
 }
