@@ -158,7 +158,7 @@ div.section, div.slide {
   .skills h3 {
     font-size: 1.25em;
   }
-  .projects .card .display img {
+  .projects .card.column .display img {
     max-height: 200px;
   }
 }
