@@ -163,6 +163,6 @@ div.section, div.slide {
     font-size: 1.25em;
   }
   .projects .card.column .display img {
-    max-height: 200px;
+    max-height: 300px;
   }
 }
