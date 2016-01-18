@@ -152,6 +152,10 @@ div.section, div.slide {
   .about .description, .projects .description, .skills ul, .contact .links p, .contact .links a {
     font-size: 1em;
   }
+  .about .headshot {
+    height: 200px;
+    width: 200px;
+  }
   .skills h1, .contact h1 {
     font-size: 2em;
   }
