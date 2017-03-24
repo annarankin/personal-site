@@ -32,7 +32,7 @@ a {
   padding: 5em 4em;
 }
 
-header > div, .contact {
+header > div, .contact, .emoji {
   padding: 2em 30px
 }
 
@@ -100,3 +100,41 @@ header img {
 .contact a, .contact p {
   color: #FFF;
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.card {
+  margin: 1em;
+  background-color: #FFF;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.card img {
+  max-height: 128px;
+  max-width: 128px;
+}
+
+.emoji a {
+  background-color: #ffc360;
+  padding: 1em;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  color: #000;
+}
+
+.emoji a:hover {
+  background-color: #eeb350;
+}
+
+.timeline {}
